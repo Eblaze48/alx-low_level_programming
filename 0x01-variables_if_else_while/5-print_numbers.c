@@ -16,10 +16,10 @@ int main(void)
 	{
 		putchar((d / 10));
 		putchar((d % 10) + '0');
-		if (d != 99)
+		if (d != 9)
 		{
-			/*putchar(',');
-			putchar(' ');*/
+			/*putchar(',');*/
+			/*putchar(' ');*/
 		}
 	}
 	putchar('\n');
