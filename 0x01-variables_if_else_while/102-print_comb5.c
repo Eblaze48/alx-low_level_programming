@@ -11,22 +11,25 @@
 int main(void)
 
 {
-	int d, p;
+	int q, p;
 
-	for (d = '0'; d < '99'; d++)
+	for (p = 0; p <= 98; p++)
 	{
-		/*if (d != 99)*/
-		for (p = d + 1; p <= '99'; p++)
+		for (q = p + 1; q <= 99; q++)
 		{
-			if (p != d)
-			{
-				putchar(d);
-				putchar(p);
-				putchar(',');
-				putchar(' ');
-			}
-		}
+			putchar((p / 10) + '0');
+			putchar((p % 10) + '0');
+			putchar(' ');
+			putchar((q / 10) + '0');
+			putchar((q % 10) + '0');
 
+
+			if (p == 98 && q == 99)
+				continue;
+
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 
