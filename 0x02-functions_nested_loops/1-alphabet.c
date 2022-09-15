@@ -1,13 +1,14 @@
-#include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * function uses _putchar function to print
- * alphabet in lowercase
- * print_alphabet - Check description
- * Description: It prints the alphabet in lowercase fallowed by a new line
+ * main - Entry Point
+ *
  * Return: Nothing
  */
-void print_alphabet(void)
+
+int main(void)
 {
 	char i;
 
